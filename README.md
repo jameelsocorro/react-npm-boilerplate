@@ -42,15 +42,14 @@ $ npm link
 
 ## Test your component
 
-Create a playground project so you could test your component.
-
-**Note**: if you have already have a create-react-app installed globally, you may skip the 'npm i -g create-react-app'.
+Create a playground project so you could test your component. **(This should be in different directory from your component)**
 
 ```bash
 $ npm i -g create-react-app
 $ npm create-react-app react-component-playgrounds
 $ cd react-component-playgrounds
 ```
+**Note**: if you have already have a create-react-app installed globally, you may skip the `npm i -g create-react-app`.
 
 Now let's link the playground app to our package library.
 
@@ -58,15 +57,11 @@ Now let's link the playground app to our package library.
 $ npm link your-package-name
 ```
 
-Finally, run the playground and play with your component!
+Finally, run the playground and play with your component. Happy Coding!
 
 ```bash
 $ npm start
 ```
-
-<br/>
-
-### Happy Coding!
 
 <br/>
 
