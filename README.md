@@ -9,32 +9,48 @@
 First, clone the repo via git:
 
 ```bash
-git clone --depth=1 https://github.com/jameelsocorro/react-npm-boilerplate.git your-package-name
+git clone --depth=1 https://github.com/jameelsocorro/react-npm-boilerplate.git your-component-name
 ```
-
-And then install dependencies with yarn.
+Don't forget to modify **package.json** with your settings first.
 
 ```bash
-$ cd your-package-name
-$ yarn
+{
+  "name": "your-component-name",
+  "version": "0.0.1",
+  "description": "Put a description here",
+  "author": {
+    "name": "Your name",
+    "email": "your email"
+  }
+}
 ```
-**Note**: If you can't use [yarn](https://github.com/yarnpkg/yarn) for some reason, try `npm install`.
+
+And then install dependencies.
+
+```bash
+$ npm i
+$ npm run build
+```
+
+### Make component linkable locally
+
+```bash
+$ npm link
+```
 
 <br/>
 
-## Linking the library locally
+## Test your component
 
-I use [Alan Smith](https://github.com/alanbsmith)'s playground for testing the package locally.
+Create a playground project so you could test your component.
+
+**Note**: if you have already have a create-react-app installed globally, you may skip the 'npm i -g create-react-app'.
 
 ```bash
-$ git clone git@github.com:alanbsmith/component-lib-playground.git
-$ cd component-lib-playground
-$ yarn
+$ npm i -g create-react-app
+$ npm create-react-app react-component-playgrounds
+$ cd react-component-playgrounds
 ```
-
-**Note**: If you can't use [yarn](https://github.com/yarnpkg/yarn) for some reason, try `npm install`.
-
-<br/>
 
 Now let's link the playground app to our package library.
 
@@ -42,7 +58,15 @@ Now let's link the playground app to our package library.
 $ npm link your-package-name
 ```
 
-You can see the full tutorial for linking the library [here](https://hackernoon.com/building-a-react-component-library-part-2-46fd4f77bb5c)
+Finally, run the playground and play with your component!
+
+```bash
+$ npm start
+```
+
+<br/>
+
+### Happy Coding!
 
 <br/>
 
