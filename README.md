@@ -9,7 +9,8 @@
 First, clone the repo via git:
 
 ```bash
-git clone --depth=1 https://github.com/jameelsocorro/react-npm-boilerplate.git your-component-name
+$ git clone --depth=1 https://github.com/jameelsocorro/react-npm-boilerplate.git your-component-name
+$ cd your-component-name
 ```
 Don't forget to modify **package.json** with your settings first.
 
